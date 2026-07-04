@@ -63,6 +63,9 @@ inspiración y referentes (con cita)
 | ![Proceso21](./imagenes/placas-soldadas.jpeg) | ![Proceso22](./imagenes/parlante.jpeg) | ![Proceso17](./imagenes/pr-17.jpeg) | ![Proceso08](./imagenes/pr-08.jpeg) |
 
 
+--------------------------
+
+
 | Video 1 | Video 2 | Video 3 |
 |:-------:|:-------:|:-------:|
 | [![Video 1](https://img.youtube.com/vi/JmE9NbwjoMs/hqdefault.jpg)](https://youtube.com/shorts/JmE9NbwjoMs) | [![Video 2](https://img.youtube.com/vi/Sk7TLUBUIL0/hqdefault.jpg)](https://youtube.com/shorts/Sk7TLUBUIL0) | [![Video 3](https://img.youtube.com/vi/-w2bnB7ahFI/hqdefault.jpg)](https://youtube.com/shorts/-w2bnB7ahFI) |
@@ -72,6 +75,8 @@ inspiración y referentes (con cita)
 | [![Video 7](https://img.youtube.com/vi/mTNN9lAFyIs/hqdefault.jpg)](https://youtube.com/shorts/mTNN9lAFyIs) | [![Video 8](https://img.youtube.com/vi/chz79BSDsxw/hqdefault.jpg)](https://youtube.com/shorts/chz79BSDsxw) | [![Video 9](https://img.youtube.com/vi/vpFVOLXRS30/hqdefault.jpg)](https://youtube.com/shorts/vpFVOLXRS30) |
 | **Video 10** | **Video 11** | **Video 12** |
 | [![Video 10](https://img.youtube.com/vi/bo8u3_Ju_fE/hqdefault.jpg)](https://youtube.com/shorts/bo8u3_Ju_fE) | [![Video 11](https://img.youtube.com/vi/CvPNiDL23gA/hqdefault.jpg)](https://youtube.com/shorts/CvPNiDL23gA) | [![Video 12](https://img.youtube.com/vi/T8TXoX9cu-E/hqdefault.jpg)](https://youtube.com/shorts/T8TXoX9cu-E) |
+
+-------------------------------
 
 ## BOM (Bill of materiales)
 
