@@ -92,30 +92,8 @@ Después de ser procesada por el integrado, la señal pasa por el potenciómetro
 #### Alimentación
 El circuito necesita alimentación porque el JRC4558 no puede funcionar por sí solo. En nuestro caso decidimos utilizar una fuente de *5 V* desde un adaptador de corriente AC/DC. El terminal positivo entrega la energía al integrado y el terminal G corresponde a la tierra o negativo común del circuito. Todos los componentes utilizan esa referencia para funcionar correctamente.
 
-#### Componentes en Detalle
 
-
-<img width="4284" height="5712" alt="materialesclaseslid" src="https://github.com/user-attachments/assets/c13b9b87-d8b6-4cb3-aec1-4c710d8df0ef" />
-
-
-| Componente | Función / Descripción |
-| --- | --- |
-| *Integrado JRC4558* | El componente más importante del circuito es el *JRC4558*, que es un amplificador operacional doble. Aunque internamente tiene dos amplificadores operacionales, en este circuito solamente se utiliza uno. Su función es recibir la señal de audio y trabajar junto con las resistencias y los capacitores para realizar el filtrado. Además ayuda a mantener una señal estable y evita que el filtro pierda demasiado nivel de salida, algo que normalmente ocurre en los filtros pasivos. |
-| *Resistencias* | Cumplen varias funciones dentro del circuito. Primero, controlan la cantidad de corriente que circula por algunas partes del circuito, protegiendo al integrado. También ayudan a establecer el punto de funcionamiento del amplificador operacional para que trabaje correctamente. Además, junto con los capacitores forman la red RC, que es la encargada de definir la frecuencia de corte del filtro. |
-| *Capacitores* | Son fundamentales porque reaccionan de forma distinta dependiendo de la frecuencia de la señal. En este circuito aparecen dos capacitores cerámicos. El primero está marcado como *472, que corresponde a **4,7 nanofaradios. El segundo está marcado como **222, que corresponde a **2,2 nanofaradios*. Estos capacitores, al trabajar junto con las resistencias, hacen que las frecuencias altas se atenúen mientras las bajas puedan seguir pasando. Por eso el resultado es un sonido con mayor presencia de graves. |
-| *Potenciómetro de frecuencia* | El primer potenciómetro está marcado como *Frequency* y tiene un valor de *100K*. Su función es modificar la frecuencia de corte del filtro. Cuando giramos la perilla, cambia el valor de resistencia dentro de la red RC. Eso hace que el filtro deje pasar una mayor o menor cantidad de frecuencias. Si aumentamos la resistencia, el filtro elimina más agudos y el sonido queda más grave. Si disminuimos la resistencia, pasan más frecuencias y el sonido conserva más medios y agudos. |
-| *Potenciómetro de volumen* | El segundo potenciómetro se llama *Level*. Su función es mucho más simple: solamente controla el volumen de salida. No modifica el filtrado del sonido. Lo único que hace es aumentar o disminuir el nivel de la señal que ya fue procesada. |
-
-#### ¿Cómo funciona todo junto?
-Cuando entra la señal de audio, las resistencias y los capacitores comienzan a separar las frecuencias. El integrado procesa esa señal utilizando la red de realimentación formada por esos mismos componentes. Después, el usuario puede ajustar la frecuencia de corte con el potenciómetro *Frequency* y regular el volumen final con el potenciómetro *Level*. Finalmente, la señal sale filtrada por la salida de audio.
-
-#### ¿Por qué se llama filtro pasabajos?
-Se llama pasabajos porque permite el paso de las frecuencias bajas y reduce las frecuencias altas. La frecuencia donde comienza esa reducción se conoce como *frecuencia de corte*, y depende de los valores de las resistencias y los capacitores del circuito.
-
-#### Conclusión
-En resumen, este circuito recibe una señal de audio, elimina parte de las frecuencias altas mediante una red formada por resistencias y capacitores, el integrado JRC4558 procesa esa señal para obtener un filtrado más estable y el usuario puede ajustar tanto la frecuencia de corte como el volumen de salida mediante los dos potenciómetros. El resultado es una señal donde predominan los sonidos graves.
-
-## carcasas
+## Carcasas
 
 <img width="3840" height="2160" alt="pcbvista" src="https://github.com/user-attachments/assets/b4be89ae-5857-48d7-8570-f0748c960c07" />
 
