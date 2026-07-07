@@ -173,11 +173,13 @@ Esta segunda carcasa está dedicada exclusivamente al módulo del *Filtro Paso B
 
 Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la silueta inspirada en las líneas de un tocadiscos y la expansión de ondas sonoras, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores.
 
-## composición
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/3592eb42-8975-4571-bfc5-819c5a324e97" />
 
-partitura e interpretación
+## Partitura
 
-detallar operación de la partitura, como se creó, cuales fueron los referentes (citando), cual es la simbología
+Un meteorito llegó desde el espacio ¿por qué tiene cables? ¿las luces significan algo?¿que nos están tratando de decir?¿es solo ruido o algo mas?... Los científicos intentan capturar este sonido y necesitan descifrarlo ¿seremos capaces?¿será que aún no estamos listos?... 
+
+Primero necesitamos entender su forma, en la tierra hay unas rocas que se llaman “Geodas”, estas son rocas son una formación geológica en el cual su interior está parcialmente o totalmente cristalizado. Los cristales de este meteorito son parecidos a una Geoda, será que… la luz en su interior y los cristales, ¿están tratando de salir por los orificios para que no pase desapercibida?
 
 ## bibliografía
 
