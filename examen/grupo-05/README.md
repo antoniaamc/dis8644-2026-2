@@ -53,6 +53,10 @@ Este módulo funciona como el reloj del sistema, es el encargado de dictar el "t
 
 <img width="502" height="742" alt="Captura de pantalla 2026-07-07 103206" src="https://github.com/user-attachments/assets/8555494d-ce35-4d63-a36f-764804ab63ba" />
 
+
+Una placa con un diseño de corazón que hace pum pum pum pum. Elegimos esta placa no solo por su forma, sino por el sonido que produce, muchas veces estuvimos con el corazón en un hilo soldando y probando, primero solo hubo estática, no podíamos “agarrar señal”, tuvimos que ver otros “mandos de control” para poder ver si sus corazones estaban funcionando.
+
+
 ### Placa 3: Secuenciador
 
 <img width="739" height="1600" alt="secuenciadorprocesoplaca" src="https://github.com/user-attachments/assets/6150ad38-d900-4894-bb25-28eb2d001fc4" />
@@ -143,9 +147,7 @@ Un meteorito llegó desde el espacio ¿por qué tiene cables? ¿las luces signif
 
 Primero necesitamos entender su forma, en la tierra hay unas rocas que se llaman “Geodas”, estas son rocas son una formación geológica en el cual su interior está parcialmente o totalmente cristalizado. Los cristales de este meteorito son parecidos a una Geoda, será que… la luz en su interior y los cristales, ¿están tratando de salir por los orificios para que no pase desapercibida?
 
-## bibliografía
-
-   ## Bibliografía
+ ## Bibliografía
 
 - Bleep Labs. (s. f.). *Bleep Labs*. https://bleeplabs.com
 
