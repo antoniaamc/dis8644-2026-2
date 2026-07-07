@@ -52,6 +52,8 @@ Este módulo funciona como el reloj del sistema, es el encargado de dictar el "t
 
 ### Placa 2: Secuenciador
 
+<img width="739" height="1600" alt="secuenciadorprocesoplaca" src="https://github.com/user-attachments/assets/6150ad38-d900-4894-bb25-28eb2d001fc4" />
+
 
 El secuenciador toma el pulso rítmico que viene del RELO y, con cada pulso, activa un marcador. Apenas llega al cuarto paso, vuelve a empezar inmediatamente sin pausas. Así, transformamos un simple pulso eléctrico en un bucle rítmico continuo, indicándole a la máquina exactamente en qué momento debe actuar.
 
@@ -74,15 +76,6 @@ Originalmente, nuestro plan era utilizar la PCB diseñada por el *Grupo 06 (Cont
 
 
 ## 4. Proceso de armado de cada placa (en detalle)
-
-<img width="899" height="1599" alt="dibujoscarcasa02" src="https://github.com/user-attachments/assets/a4b3e921-f5ef-4558-a8e5-be47a66eb485" />
-
-<img width="1599" height="899" alt="procesocarcasa02" src="https://github.com/user-attachments/assets/3dd1a180-873e-42fa-9f29-35e34f859e8a" />
-
-<img width="1200" height="1600" alt="carcasa02proceso" src="https://github.com/user-attachments/assets/ddaab7f5-ddc5-4265-8233-6b7ea48c0420" />
-
-<img width="1200" height="1600" alt="carcasaproceso" src="https://github.com/user-attachments/assets/ca2ae7d9-7afb-4bcd-aa2f-625e7505b610" />
-
 
 #### Detalles del Funcionamiento Técnico
 
@@ -129,14 +122,39 @@ En resumen, este circuito recibe una señal de audio, elimina parte de las frecu
 
 ## carcasas
 
-<img width="3300" height="1856" alt="componentesunidos" src="https://github.com/user-attachments/assets/00f5585d-3afc-4de0-9832-2dadeff76ad4" />
+<img width="3840" height="2160" alt="pcbvista" src="https://github.com/user-attachments/assets/b4be89ae-5857-48d7-8570-f0748c960c07" />
+
 
 <img width="3056" height="3056" alt="propuestacarcasa03" src="https://github.com/user-attachments/assets/875ce868-0f07-43ef-a982-797b489b222d" />
 
+
+<img width="900" height="1600" alt="placaimpresa" src="https://github.com/user-attachments/assets/8992b91d-416e-42a1-a63e-fe399592febf" />
+
+
+<img width="4284" height="5712" alt="propuestacarcasa01" src="https://github.com/user-attachments/assets/1df95988-a644-43e0-a63a-92a30e079794" />
+
+
+<img width="3300" height="1856" alt="componentesunidos" src="https://github.com/user-attachments/assets/00f5585d-3afc-4de0-9832-2dadeff76ad4" />
+
+
 <img width="3056" height="3056" alt="carcasproto" src="https://github.com/user-attachments/assets/91f1ab5e-b782-4f27-afd0-9d1f065c5e1d" />
 
+# Carcasa
 
-## 5. Arquitectura Estructural de las Carcasas
+### 5. Influencias y referentes para la carcasa
+
+Para el diseño de nuestras carcasas, estos fueron nuestros referentes:
+
+1. *Bleep Labs:* Firma icónica en la manufactura de sintetizadores experimentales. Su filosofía operativa plantea que la electrónica debe hablar el mismo idioma que la interfaz visual. El circuito no debe ser un secreto técnico confinado a una caja ciega; debe ser un elemento vivo que explica de forma transparente el origen del flujo eléctrico y sonoro, estrechando el vínculo entre el músico, la máquina y la onda sonora resultante.
+   <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f1e88226-c6fa-4811-ad29-7b0e547f98be" />
+
+
+3. Sled Dog, de 2001, un reproductor de CD modificado que permite rascarlo con la mano. Imagen © Simon Lonergan, 2001.
+   <img width="1200" height="998" alt="image" src="https://github.com/user-attachments/assets/17bed07c-aa80-412d-8adb-1c1cfaf87233" />
+
+4. *Yoko Ono (Composición Activa):* La disposición de los controles y la apertura de las carcasas dialogan con las teorías de participación artística planteadas por Yoko Ono. En sus postulados teóricos, el valor del arte no descansa en la rigidez del objeto estático, sino en las dinámicas humanas y las experiencias que se desencadenan cuando el espectador interactúa con él. Bajo este enfoque, nuestro sintetizador modular renuncia a la caja cerrada tradicional para invitar activamente al usuario a un viaje de descubrimiento perceptivo.
+
+## 6. Arquitectura Estructural de las Carcasas
 
 La carcasa de nuestro instrumento trasciende la idea de ser un simple contenedor protector. Se concibe como un manifiesto formal y material cuya meta es resguardar, estructurar, revelar y comunicar de manera clara la trama electrónica que ocurre en su interior. En perfecta sincronía con nuestra metáfora de la Tierra y el Cielo (el meteorito y el telescopio), decidimos que el sistema final no habitara en una sola caja ciega, sino en *dos carcasas físicas diferenciadas* que dialogan entre sí a través del contraste de sus materiales y procesos de fabricación.
 
@@ -144,7 +162,7 @@ La carcasa de nuestro instrumento trasciende la idea de ser un simple contenedor
 <img width="3000" height="4000" alt="carcasa02" src="https://github.com/user-attachments/assets/f77e9826-d338-4d34-a972-3229a855df4f" />
 
 
-### 6.1. La Geoda Lunar: Secuenciador y Oscilador (Construcción Manual)
+### Carcasa 1: Geoda
 
 Esta unidad funciona como el "núcleo rítmico" y sonoro del sistema. Contiene dos placas interconectadas que operan de forma conjunta:
 * El módulo *Secuenciador* 
@@ -154,24 +172,11 @@ Para representar la caída del meteorito, el caos y su conexión con la Tierra, 
 
 El detalle más íntimo de esta pieza se encuentra en su interior: cristales adheridos a mano que simulan el corazón cristalizado de una geoda real. Las luces LED de los circuitos actúan como indicadores visuales del "latido" del sistema, brillando y refractándose a través de estos cristales internos para asomarse hacia el exterior, invitando al observador a mirar dentro de la roca.
 
-### 6.2. La Carcasa del Filtro: Precisión y Transparencia (Corte Láser)
+### Carcasa 2: Filtro
 
 Esta segunda carcasa está dedicada exclusivamente al módulo del *Filtro Paso Bajo (VCF) del Grupo 05*. A diferencia de la rusticidad orgánica de la Geoda, esta unidad representa la precisión, el "cielo" y la observación estructurada.
 
-Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la icónica silueta inspirada en las líneas de un tocadiscos o un lente de observación, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores metálicos con una altura de entre 15 y 20 mm.
-
-Esta solución de diseño da vida a un volumen liviano y suspendido. Al dejar los laterales abiertos y aprovechar la transparencia absoluta del acrílico, la *placa de cobre desnudo* se convierte en la protagonista indiscutida. El usuario puede escudriñar las soldaduras manuales y los componentes desde cualquier ángulo, transformando la ingeniería cruda en un paisaje visualmente contemplable.
-
-
-<img width="3840" height="2160" alt="pcbvista" src="https://github.com/user-attachments/assets/b4be89ae-5857-48d7-8570-f0748c960c07" />
-
-
-### Influencias y referentes artísticos
-
-El diseño conceptual de estos contenedores se apoya fuertemente en dos corrientes vanguardistas:
-
-1. *Bleep Labs:* Firma icónica en la manufactura de sintetizadores experimentales. Su filosofía operativa plantea que la electrónica debe hablar el mismo idioma que la interfaz visual. El circuito no debe ser un secreto técnico confinado a una caja ciega; debe ser un elemento vivo que explica de forma transparente el origen del flujo eléctrico y sonoro, estrechando el vínculo entre el músico, la máquina y la onda sonora resultante.
-2. *Yoko Ono (Composición Activa):* La disposición de los controles y la apertura de las carcasas dialogan con las teorías de participación artística planteadas por Yoko Ono. En sus postulados teóricos, el valor del arte no descansa en la rigidez del objeto estático, sino en las dinámicas humanas y las experiencias que se desencadenan cuando el espectador interactúa con él. Bajo este enfoque, nuestro sintetizador modular renuncia a la caja cerrada tradicional para invitar activamente al usuario a un viaje de descubrimiento perceptivo.
+Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la silueta inspirada en las líneas de un tocadiscos y la expansión de ondas sonoras, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores.
 
 ## composición
 
@@ -180,3 +185,5 @@ partitura e interpretación
 detallar operación de la partitura, como se creó, cuales fueron los referentes (citando), cual es la simbología
 
 ## bibliografía
+
+https://econtact.ca/20_3/collins_cdhacking.html 
