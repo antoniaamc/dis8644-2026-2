@@ -44,7 +44,6 @@ Durante el proceso de ensamble y pruebas en el taller, el proyecto decantó en d
 
 <img width="457" height="452" alt="Captura de pantalla 2026-07-07 103418" src="https://github.com/user-attachments/assets/f5a45aad-1e66-4a6a-b226-b7a545588fac" />
 
-
 Este módulo funciona como el reloj del sistema, es el encargado de dictar el "tiempo" o la velocidad de todo el sintetizador. Sin él, el sistema no tendría una referencia para avanzar y, por lo tanto, no habría ritmo. Su función es generar constantemente una señal eléctrica llamada "onda cuadrada" (un pulso que sube y baja de voltaje a un ritmo constante), que sale hacia el secuenciador para marcarle el paso a cada uno de sus movimientos. Esta placa fue diseñada por nuestros profesores de cátedra.
 
 * *Señal de Salida:* Emite una onda cuadrada que es el pulso maestro del sintetizador.
@@ -58,7 +57,6 @@ Este módulo funciona como el reloj del sistema, es el encargado de dictar el "t
 
 <img width="739" height="1600" alt="secuenciadorprocesoplaca" src="https://github.com/user-attachments/assets/6150ad38-d900-4894-bb25-28eb2d001fc4" />
 
-
 El secuenciador toma el pulso rítmico que viene del RELO y, con cada pulso, activa un marcador. Apenas llega al cuarto paso, vuelve a empezar inmediatamente sin pausas. Así, transformamos un simple pulso eléctrico en un bucle rítmico continuo, indicándole a la máquina exactamente en qué momento debe actuar.
 
 Para entender este módulo de forma sencilla, imaginen un contador de cuatro tiempos. El secuenciador no genera ningún sonido por sí mismo, su trabajo es ir activando luces y marcando ritmos uno tras otro siguiendo el "tic-tac" del metrónomo. 
@@ -67,11 +65,11 @@ Originalmente, nuestro plan era utilizar la PCB diseñada por el *Grupo 06 (Cont
 
 > * *Diseño Original:* Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Electrónicas.
 
-## 4. Proceso de armado de cada placa (prueba y error)
-
 Rediseño completo de la placa filtro:
 
-### Filtro Paso Bajo Activo — Grupo 05
+### Placa 4: Filtro 
+
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/55ffc076-1ac7-4caf-b7f5-589310bd97ca" />
 
 El circuito que realizamos corresponde a un *filtro pasabajos activo*. Su función es dejar pasar principalmente las frecuencias bajas, que corresponden a los graves, mientras que reduce las frecuencias altas o agudos. Este tipo de circuito se utiliza en equipos de audio cuando se quiere obtener un sonido más grave, por ejemplo en un subwoofer.
 
@@ -84,6 +82,16 @@ Después de ser procesada por el integrado, la señal pasa por el potenciómetro
 
 #### Alimentación
 El circuito necesita alimentación porque el JRC4558 no puede funcionar por sí solo. En nuestro caso decidimos utilizar una fuente de *5 V* desde un adaptador de corriente AC/DC. El terminal positivo entrega la energía al integrado y el terminal G corresponde a la tierra o negativo común del circuito. Todos los componentes utilizan esa referencia para funcionar correctamente.
+
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/e9f64904-c916-4757-9385-46dab2cb132d" />
+
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/86e6cfc5-7f93-49c9-b616-7f8ce0e34e7f" />
+
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/01f53f9c-f50d-4c4a-88fe-5479a3730edf" />
+
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/3ee64cfa-d092-4c52-91a3-2d1ee6792e26" />
+
+------
 
 # Carcasa
 
@@ -125,7 +133,6 @@ Esta segunda carcasa está dedicada exclusivamente al módulo del *Filtro Paso B
 Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la silueta inspirada en las líneas de un tocadiscos y la expansión de ondas sonoras, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores.
 
 <img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/3592eb42-8975-4571-bfc5-819c5a324e97" />
-
 
 ## Partitura
 
