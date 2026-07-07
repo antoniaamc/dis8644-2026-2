@@ -112,19 +112,20 @@ Para el diseño de nuestras carcasas, estos fueron nuestros referentes:
 
 La carcasa de nuestro instrumento trasciende la idea de ser un simple contenedor protector. Se concibe como un manifiesto formal y material cuya meta es resguardar, estructurar, revelar y comunicar de manera clara la trama electrónica que ocurre en su interior. En perfecta sincronía con nuestra metáfora de la Tierra y el Cielo (el meteorito y el telescopio), decidimos que el sistema final no habitara en una sola caja ciega, sino en *dos carcasas físicas diferenciadas* que dialogan entre sí a través del contraste de sus materiales y procesos de fabricación.
 
-
-<img width="3000" height="4000" alt="carcasa02" src="https://github.com/user-attachments/assets/f77e9826-d338-4d34-a972-3229a855df4f" />
-
-
 ### Carcasa 1: Geoda
 
 Esta unidad funciona como el "núcleo rítmico" y sonoro del sistema. Contiene dos placas interconectadas que operan de forma conjunta:
 * El módulo *Secuenciador* 
 * El módulo *Lub-Dub (Oscilador/Percutor, Grupo 06)*.
 
+* <img width="3000" height="4000" alt="carcasa02" src="https://github.com/user-attachments/assets/f77e9826-d338-4d34-a972-3229a855df4f" />
+
 Para representar la caída del meteorito, el caos y su conexión con la Tierra, esta carcasa fue *construida completamente a mano*, alejándonos por completo de la fabricación digital. Su base se conforma por una estructura alámbrica recubierta con papel aluminio para generar el soporte estructural. Sobre esto, se modeló el volumen con cerámica en frío para lograr la textura rocosa, finalizando con un trabajo de pintura. 
 
 El detalle más íntimo de esta pieza se encuentra en su interior: cristales adheridos a mano que simulan el corazón cristalizado de una geoda real. Las luces LED de los circuitos actúan como indicadores visuales del "latido" del sistema, brillando y refractándose a través de estos cristales internos para asomarse hacia el exterior, invitando al observador a mirar dentro de la roca.
+
+<img width="825" height="640" alt="Captura de Pantalla 2026-07-07 a la(s) 11 52 51" src="https://github.com/user-attachments/assets/0938b1a9-8cc4-4be4-b217-f6658a970e2a" />
+
 
 ### Carcasa 2: Filtro
 
@@ -133,6 +134,8 @@ Esta segunda carcasa está dedicada exclusivamente al módulo del *Filtro Paso B
 Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la silueta inspirada en las líneas de un tocadiscos y la expansión de ondas sonoras, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores.
 
 <img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/3592eb42-8975-4571-bfc5-819c5a324e97" />
+
+
 
 ## Partitura
 
