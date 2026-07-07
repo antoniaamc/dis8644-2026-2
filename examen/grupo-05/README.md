@@ -142,4 +142,12 @@ Primero necesitamos entender su forma, en la tierra hay unas rocas que se llaman
 
 ## bibliografía
 
-https://econtact.ca/20_3/collins_cdhacking.html 
+   ## Bibliografía
+
+- Bleep Labs. (s. f.). *Bleep Labs*. https://bleeplabs.com
+
+- Collins, N. (2005). *CD Hacking*. eContact! 20(3). https://econtact.ca/20_3/collins_cdhacking.html
+
+- Lonergan, S. (2001). *Sled Dog* [Reproductor de CD modificado].
+
+- Ono, Y. (1964). *Grapefruit*. Tokyo: Wunternaum Press.
