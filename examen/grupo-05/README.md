@@ -67,16 +67,9 @@ Originalmente, nuestro plan era utilizar la PCB diseñada por el *Grupo 06 (Cont
 
 > * *Diseño Original:* Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Electrónicas.
 
-
 ## 4. Proceso de armado de cada placa (prueba y error)
 
-
-
-#### Detalles del Funcionamiento Técnico
-
-Al integrar el secuenciador CD4017 en nuestra placa, logramos transformar los pulsos del módulo reloj (555) en un ciclo lógico estructurado. Para asegurar el éxito de esta etapa, mapeamos las salidas y configuramos el reinicio del chip, obteniendo los siguientes resultados:
-
-> * *Diseño Original:* Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Eelectrónicas.
+Rediseño completo de la placa filtro:
 
 ### Filtro Paso Bajo Activo — Grupo 05
 
