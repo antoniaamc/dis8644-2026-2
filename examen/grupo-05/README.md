@@ -6,13 +6,13 @@
 | Catalina Jeria | @15-catalinajeria |
 | Catalina Balboa | @05-Catabalboa |
 
-## criterios de diseño del sistema
+## 1. Criterios de diseño del sistema
 
-inspiración para construir, desde donde partieron
+El presente proyecto fue desarrollado en el marco del Taller de Máquinas y Electrónica, una asignatura cuyo desafío principal consistió en diseñar y fabricar un sintetizador modular mediante el trabajo colaborativo. Bajo esta modalidad, cada grupo del curso asumió la tarea de desarrollar un módulo electrónico distinto, los cuales finalmente se integrarían para conformar un único instrumento musical. Nuestro proceso se adaptó estrictamente a la realidad material y económica del curso en Chile, gestionando un presupuesto acotado mediante la organización de cuotas de $15.000 y, en ciertos casos, de $8.000 para distribuir los costos a lo largo del semestre. Los componentes se adquirieron principalmente en locales especializados del sector de San Diego, en Santiago, y se complementaron con materiales facilitados por el Laboratorio de Investigación y Desarrollo (LID) para la fase de pruebas y prototipos.
 
-contexto desde Chile, desde nuestra disponibilidad material
+Desde el punto de vista conceptual, la propuesta formal del sistema nace de una narrativa poética y de una analogía geológica: la llegada de un objeto desconocido proveniente del espacio. Un meteorito aterrizó en la Tierra desatando interrogantes inmediatas: ¿Por qué tiene cables? ¿Las luces significan algo? ¿Qué nos está tratando de decir? ¿Es solo ruido o algo más?
 
-nombre de sistema/instrumento construido por medio de módulos
+Para comprender su naturaleza, el diseño se inspiró en las geodas del desierto. Las geodas son formaciones rocosas que presentan un exterior simple, sobrio y rústico, pero que al abrirse revelan un interior parcialmente o totalmente cristalizado y brillante. Esta dualidad define el eje estético del proyecto: los cristales y la luz interna del meteorito parecen pugnar por salir a través de los orificios de la carcasa para no pasar desapercibidos. De este modo, el concepto de observación se convierte en la directriz del diseño. La luz emerge desde el centro de la estructura, revelando gradualmente sus componentes y estableciendo una relación íntima entre la exploración espacial, la contemplación de los fenómenos naturales y la experimentación sonora. La tecnología no se oculta, se expone deliberadamente para invitar al usuario a descubrir cómo cada módulo transforma el sonido y cómo la interacción física modifica la experiencia musical, transformando la electrónica en un paisaje visualmente contemplable.
 
 ## 2. Placas Utilizadas 
 
@@ -50,7 +50,11 @@ Este módulo funciona como el reloj del sistema, es el encargado de dictar el "t
 * *Señal de Salida:* Emite una onda cuadrada que es el pulso maestro del sintetizador.
 * *Recepción y Envío:* Actúa como la fuente emisora que alimenta directamente al Secuenciador CD4017, sincronizando todos los procesos temporales del instrumento.
 
-### Placa 2: Secuenciador
+### Placa 2: Oscilador
+
+<img width="502" height="742" alt="Captura de pantalla 2026-07-07 103206" src="https://github.com/user-attachments/assets/8555494d-ce35-4d63-a36f-764804ab63ba" />
+
+### Placa 3: Secuenciador
 
 <img width="739" height="1600" alt="secuenciadorprocesoplaca" src="https://github.com/user-attachments/assets/6150ad38-d900-4894-bb25-28eb2d001fc4" />
 
@@ -64,18 +68,9 @@ Originalmente, nuestro plan era utilizar la PCB diseñada por el *Grupo 06 (Cont
 > * *Diseño Original:* Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Electrónicas.
 
 
-### Placa 3: Oscilador
-
-<img width="502" height="742" alt="Captura de pantalla 2026-07-07 103206" src="https://github.com/user-attachments/assets/8555494d-ce35-4d63-a36f-764804ab63ba" />
+## 4. Proceso de armado de cada placa (prueba y error)
 
 
-### Placa 4: Filtro
-
-
-<img width="2160" height="3840" alt="pcbadelante" src="https://github.com/user-attachments/assets/088bd9f9-fae4-45ca-ad97-eb788ed565ee" />
-
-
-## 4. Proceso de armado de cada placa (en detalle)
 
 #### Detalles del Funcionamiento Técnico
 
