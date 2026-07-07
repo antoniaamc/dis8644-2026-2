@@ -92,26 +92,6 @@ Después de ser procesada por el integrado, la señal pasa por el potenciómetro
 #### Alimentación
 El circuito necesita alimentación porque el JRC4558 no puede funcionar por sí solo. En nuestro caso decidimos utilizar una fuente de *5 V* desde un adaptador de corriente AC/DC. El terminal positivo entrega la energía al integrado y el terminal G corresponde a la tierra o negativo común del circuito. Todos los componentes utilizan esa referencia para funcionar correctamente.
 
-
-## Carcasas
-
-<img width="3840" height="2160" alt="pcbvista" src="https://github.com/user-attachments/assets/b4be89ae-5857-48d7-8570-f0748c960c07" />
-
-
-<img width="3056" height="3056" alt="propuestacarcasa03" src="https://github.com/user-attachments/assets/875ce868-0f07-43ef-a982-797b489b222d" />
-
-
-<img width="900" height="1600" alt="placaimpresa" src="https://github.com/user-attachments/assets/8992b91d-416e-42a1-a63e-fe399592febf" />
-
-
-<img width="4284" height="5712" alt="propuestacarcasa01" src="https://github.com/user-attachments/assets/1df95988-a644-43e0-a63a-92a30e079794" />
-
-
-<img width="3300" height="1856" alt="componentesunidos" src="https://github.com/user-attachments/assets/00f5585d-3afc-4de0-9832-2dadeff76ad4" />
-
-
-<img width="3056" height="3056" alt="carcasproto" src="https://github.com/user-attachments/assets/91f1ab5e-b782-4f27-afd0-9d1f065c5e1d" />
-
 # Carcasa
 
 ### 5. Influencias y referentes para la carcasa
@@ -152,6 +132,7 @@ Esta segunda carcasa está dedicada exclusivamente al módulo del *Filtro Paso B
 Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la silueta inspirada en las líneas de un tocadiscos y la expansión de ondas sonoras, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores.
 
 <img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/3592eb42-8975-4571-bfc5-819c5a324e97" />
+
 
 ## Partitura
 
