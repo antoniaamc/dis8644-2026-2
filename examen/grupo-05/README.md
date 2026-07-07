@@ -1,9 +1,3 @@
-# examen-grupo-05
-
-INCOMPLETO, subido por si acaso
-
-## integrantes
-
 | Nombre | Cuenta de GitHub |
 | --- | --- |
 | Luisa Toro | @30-Luisaatoro9 |
@@ -28,137 +22,156 @@ Durante el proceso de ensamble y pruebas en el taller, el proyecto decantó en d
 
 | Módulo | Origen / Grupo | Función Principal |
 | --- | --- | --- |
-| **Reloj (RELO)** | Cátedra / Profesores | Generador de pulsos de sincronía temporizados. |
-| **Secuenciador CD4017** | Primer Circuito | Control de pasos rítmicos distribuidos (Ver Nota Final). |
-| **Lub-dub** | Grupo 06 | **Oscilador** (Fuente principal de señal de audio activa). |
-| **Filtro Paso Bajo Activo** | Grupo 05 | Filtro Analógico VCF soldado sobre cobre desnudo. |
+| *Reloj (RELO)* | Cátedra / Profesores | Generador de pulsos de sincronía temporizados. |
+| *Secuenciador CD4017* | Primer Circuito | Control de pasos rítmicos distribuidos (Ver Nota Final). |
+| *Lub-dub* | Grupo 06 | *Oscilador* (Fuente principal de señal de audio activa). |
+| *Filtro Paso Bajo Activo* | Grupo 05 | Filtro Analógico VCF soldado sobre cobre desnudo. |
 
 ### Placas soldadas pero no utilizadas (Descartadas)
 
 | Módulo | Origen / Grupo | Estado / Observación |
 | --- | --- | --- |
-| **Secuenciador** | Grupo 02 | Descartado por inestabilidad en la cadena general. |
-| **Comando Estelar** | Grupo 03 | Soldado, pero no integrado al flujo definitivo. |
-| **Chirigüe Mecanizado** | Grupo 04 | Oscilador original descartado por fallas en placa. |
-| **PARLA** | LID | Módulo de salida descartado. |
+| *Secuenciador* | Grupo 02 | Descartado por inestabilidad en la cadena general. |
+| *Comando Estelar* | Grupo 03 | Soldado, pero no integrado al flujo definitivo. |
+| *Chirigüe Mecanizado* | Grupo 04 | Oscilador original descartado por fallas en placa. |
+| *PARLA* | LID | Módulo de salida descartado. |
 
-**Flujo general del sistema:**
+<img width="4284" height="5712" alt="placassoldadas (1)" src="https://github.com/user-attachments/assets/7a6c7361-5821-4a31-b6c8-485b19ad3d10" />
 
 ## 3. Funcionamiento de las placas
 
 ### Placa 1: RELO 
 
+<img width="457" height="452" alt="Captura de pantalla 2026-07-07 103418" src="https://github.com/user-attachments/assets/f5a45aad-1e66-4a6a-b226-b7a545588fac" />
+
+
 Este módulo funciona como el reloj del sistema, es el encargado de dictar el "tiempo" o la velocidad de todo el sintetizador. Sin él, el sistema no tendría una referencia para avanzar y, por lo tanto, no habría ritmo. Su función es generar constantemente una señal eléctrica llamada "onda cuadrada" (un pulso que sube y baja de voltaje a un ritmo constante), que sale hacia el secuenciador para marcarle el paso a cada uno de sus movimientos. Esta placa fue diseñada por nuestros profesores de cátedra.
 
-* **Señal de Salida:** Emite una onda cuadrada que es el pulso maestro del sintetizador.
-* **Recepción y Envío:** Actúa como la fuente emisora que alimenta directamente al Secuenciador CD4017, sincronizando todos los procesos temporales del instrumento.
+* *Señal de Salida:* Emite una onda cuadrada que es el pulso maestro del sintetizador.
+* *Recepción y Envío:* Actúa como la fuente emisora que alimenta directamente al Secuenciador CD4017, sincronizando todos los procesos temporales del instrumento.
 
 ### Placa 2: Secuenciador
+
 
 El secuenciador toma el pulso rítmico que viene del RELO y, con cada pulso, activa un marcador. Apenas llega al cuarto paso, vuelve a empezar inmediatamente sin pausas. Así, transformamos un simple pulso eléctrico en un bucle rítmico continuo, indicándole a la máquina exactamente en qué momento debe actuar.
 
 Para entender este módulo de forma sencilla, imaginen un contador de cuatro tiempos. El secuenciador no genera ningún sonido por sí mismo, su trabajo es ir activando luces y marcando ritmos uno tras otro siguiendo el "tic-tac" del metrónomo. 
 
-Originalmente, nuestro plan era utilizar la PCB diseñada por el **Grupo 06 (Contador Binario)** para cumplir con esta función. Sin embargo, tras ensamblar la placa, el circuito no funcionó. Frente a este imprevisto, tomamos la decisión técnica de descartarla y construir una solución alternativa desde cero. Para ello, decidimos utilizar el esquemático original entregado por nuestro profesor de cátedra y **soldar los componentes directamente a mano sobre una placa de contacto (PCB genérica perforada) que teníamos a libre disposición en el taller. Estructurando el circuito en torno al integrado **CD4017** (un contador de década).
+Originalmente, nuestro plan era utilizar la PCB diseñada por el *Grupo 06 (Contador Binario)* para cumplir con esta función. Sin embargo, tras ensamblar la placa, el circuito no funcionó. Frente a este imprevisto, tomamos la decisión técnica de descartarla y construir una solución alternativa desde cero. Para ello, decidimos utilizar el esquemático original entregado por nuestro profesor de cátedra y *soldar los componentes directamente a mano sobre una placa de contacto (PCB genérica perforada) que teníamos a libre disposición en el taller. Estructurando el circuito en torno al integrado **CD4017* (un contador de década).
 
-> * **Diseño Original:** Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Electrónicas.
+> * *Diseño Original:* Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Electrónicas.
+
 
 ### Placa 3: Oscilador
+
+<img width="502" height="742" alt="Captura de pantalla 2026-07-07 103206" src="https://github.com/user-attachments/assets/8555494d-ce35-4d63-a36f-764804ab63ba" />
+
 
 ### Placa 4: Filtro
 
 
-## 4. Proceso de armado de cada placa, aprendizajes y complicaciones
+<img width="2160" height="3840" alt="pcbadelante" src="https://github.com/user-attachments/assets/088bd9f9-fae4-45ca-ad97-eb788ed565ee" />
 
-Explicar primer modulo
+
+## 4. Proceso de armado de cada placa (en detalle)
+
+<img width="899" height="1599" alt="dibujoscarcasa02" src="https://github.com/user-attachments/assets/a4b3e921-f5ef-4558-a8e5-be47a66eb485" />
+
+<img width="1599" height="899" alt="procesocarcasa02" src="https://github.com/user-attachments/assets/3dd1a180-873e-42fa-9f29-35e34f859e8a" />
+
+<img width="1200" height="1600" alt="carcasa02proceso" src="https://github.com/user-attachments/assets/ddaab7f5-ddc5-4265-8233-6b7ea48c0420" />
+
+<img width="1200" height="1600" alt="carcasaproceso" src="https://github.com/user-attachments/assets/ca2ae7d9-7afb-4bcd-aa2f-625e7505b610" />
+
 
 #### Detalles del Funcionamiento Técnico
 
 Al integrar el secuenciador CD4017 en nuestra placa, logramos transformar los pulsos del módulo reloj (555) en un ciclo lógico estructurado. Para asegurar el éxito de esta etapa, mapeamos las salidas y configuramos el reinicio del chip, obteniendo los siguientes resultados:
 
-> * **Diseño Original:** Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Eelectrónicas.
+> * *Diseño Original:* Documentación técnica y esquemático base provisto por la Cátedra del Taller de Máquinas Eelectrónicas.
 
 ### Filtro Paso Bajo Activo — Grupo 05
 
-El circuito que realizamos corresponde a un **filtro pasabajos activo**. Su función es dejar pasar principalmente las frecuencias bajas, que corresponden a los graves, mientras que reduce las frecuencias altas o agudos. Este tipo de circuito se utiliza en equipos de audio cuando se quiere obtener un sonido más grave, por ejemplo en un subwoofer.
+El circuito que realizamos corresponde a un *filtro pasabajos activo*. Su función es dejar pasar principalmente las frecuencias bajas, que corresponden a los graves, mientras que reduce las frecuencias altas o agudos. Este tipo de circuito se utiliza en equipos de audio cuando se quiere obtener un sonido más grave, por ejemplo en un subwoofer.
 
-Se llama filtro **activo** porque utiliza un componente electrónico activo, que en este caso es el integrado **JRC4558**, el cual necesita alimentación para poder funcionar. En nuestro montaje decidimos utilizar una alimentación de **5 V**, obtenida desde una salida USB de una batería recargable. Aunque el esquema original suele alimentarse con un voltaje mayor, durante las pruebas comprobamos que con 5 V el circuito funcionó correctamente para la aplicación que necesitábamos.
+Se llama filtro *activo* porque utiliza un componente electrónico activo, que en este caso es el integrado *JRC4558, el cual necesita alimentación para poder funcionar. En nuestro montaje decidimos utilizar una alimentación de **5 V*, obtenida desde una salida USB de una batería recargable. Aunque el esquema original suele alimentarse con un voltaje mayor, durante las pruebas comprobamos que con 5 V el circuito funcionó correctamente para la aplicación que necesitábamos.
 
 #### Recorrido de la señal
-La señal de audio entra por el terminal llamado **Audio Input**. Esa señal puede venir desde un teléfono, un computador o cualquier dispositivo que entregue audio. Antes de llegar al integrado, la señal pasa por una combinación de resistencias, capacitores y el potenciómetro de frecuencia. Todos estos componentes trabajan juntos para determinar qué frecuencias van a pasar y cuáles se van a atenuar.
+La señal de audio entra por el terminal llamado *Audio Input*. Esa señal puede venir desde un teléfono, un computador o cualquier dispositivo que entregue audio. Antes de llegar al integrado, la señal pasa por una combinación de resistencias, capacitores y el potenciómetro de frecuencia. Todos estos componentes trabajan juntos para determinar qué frecuencias van a pasar y cuáles se van a atenuar.
 
-Después de ser procesada por el integrado, la señal pasa por el potenciómetro de volumen y finalmente sale por **Audio Output**, lista para conectarse a un amplificador o a un parlante.
+Después de ser procesada por el integrado, la señal pasa por el potenciómetro de volumen y finalmente sale por *Audio Output*, lista para conectarse a un amplificador o a un parlante.
 
 #### Alimentación
-El circuito necesita alimentación porque el JRC4558 no puede funcionar por sí solo. En nuestro caso decidimos utilizar una fuente de **5 V** desde un adaptador de corriente AC/DC. El terminal positivo entrega la energía al integrado y el terminal G corresponde a la tierra o negativo común del circuito. Todos los componentes utilizan esa referencia para funcionar correctamente.
+El circuito necesita alimentación porque el JRC4558 no puede funcionar por sí solo. En nuestro caso decidimos utilizar una fuente de *5 V* desde un adaptador de corriente AC/DC. El terminal positivo entrega la energía al integrado y el terminal G corresponde a la tierra o negativo común del circuito. Todos los componentes utilizan esa referencia para funcionar correctamente.
 
 #### Componentes en Detalle
 
+
+<img width="4284" height="5712" alt="materialesclaseslid" src="https://github.com/user-attachments/assets/c13b9b87-d8b6-4cb3-aec1-4c710d8df0ef" />
+
+
 | Componente | Función / Descripción |
 | --- | --- |
-| **Integrado JRC4558** | El componente más importante del circuito es el **JRC4558**, que es un amplificador operacional doble. Aunque internamente tiene dos amplificadores operacionales, en este circuito solamente se utiliza uno. Su función es recibir la señal de audio y trabajar junto con las resistencias y los capacitores para realizar el filtrado. Además ayuda a mantener una señal estable y evita que el filtro pierda demasiado nivel de salida, algo que normalmente ocurre en los filtros pasivos. |
-| **Resistencias** | Cumplen varias funciones dentro del circuito. Primero, controlan la cantidad de corriente que circula por algunas partes del circuito, protegiendo al integrado. También ayudan a establecer el punto de funcionamiento del amplificador operacional para que trabaje correctamente. Además, junto con los capacitores forman la red RC, que es la encargada de definir la frecuencia de corte del filtro. |
-| **Capacitores** | Son fundamentales porque reaccionan de forma distinta dependiendo de la frecuencia de la señal. En este circuito aparecen dos capacitores cerámicos. El primero está marcado como **472**, que corresponde a **4,7 nanofaradios**. El segundo está marcado como **222**, que corresponde a **2,2 nanofaradios**. Estos capacitores, al trabajar junto con las resistencias, hacen que las frecuencias altas se atenúen mientras las bajas puedan seguir pasando. Por eso el resultado es un sonido con mayor presencia de graves. |
-| **Potenciómetro de frecuencia** | El primer potenciómetro está marcado como **Frequency** y tiene un valor de **100K**. Su función es modificar la frecuencia de corte del filtro. Cuando giramos la perilla, cambia el valor de resistencia dentro de la red RC. Eso hace que el filtro deje pasar una mayor o menor cantidad de frecuencias. Si aumentamos la resistencia, el filtro elimina más agudos y el sonido queda más grave. Si disminuimos la resistencia, pasan más frecuencias y el sonido conserva más medios y agudos. |
-| **Potenciómetro de volumen** | El segundo potenciómetro se llama **Level**. Su función es mucho más simple: solamente controla el volumen de salida. No modifica el filtrado del sonido. Lo único que hace es aumentar o disminuir el nivel de la señal que ya fue procesada. |
+| *Integrado JRC4558* | El componente más importante del circuito es el *JRC4558*, que es un amplificador operacional doble. Aunque internamente tiene dos amplificadores operacionales, en este circuito solamente se utiliza uno. Su función es recibir la señal de audio y trabajar junto con las resistencias y los capacitores para realizar el filtrado. Además ayuda a mantener una señal estable y evita que el filtro pierda demasiado nivel de salida, algo que normalmente ocurre en los filtros pasivos. |
+| *Resistencias* | Cumplen varias funciones dentro del circuito. Primero, controlan la cantidad de corriente que circula por algunas partes del circuito, protegiendo al integrado. También ayudan a establecer el punto de funcionamiento del amplificador operacional para que trabaje correctamente. Además, junto con los capacitores forman la red RC, que es la encargada de definir la frecuencia de corte del filtro. |
+| *Capacitores* | Son fundamentales porque reaccionan de forma distinta dependiendo de la frecuencia de la señal. En este circuito aparecen dos capacitores cerámicos. El primero está marcado como *472, que corresponde a **4,7 nanofaradios. El segundo está marcado como **222, que corresponde a **2,2 nanofaradios*. Estos capacitores, al trabajar junto con las resistencias, hacen que las frecuencias altas se atenúen mientras las bajas puedan seguir pasando. Por eso el resultado es un sonido con mayor presencia de graves. |
+| *Potenciómetro de frecuencia* | El primer potenciómetro está marcado como *Frequency* y tiene un valor de *100K*. Su función es modificar la frecuencia de corte del filtro. Cuando giramos la perilla, cambia el valor de resistencia dentro de la red RC. Eso hace que el filtro deje pasar una mayor o menor cantidad de frecuencias. Si aumentamos la resistencia, el filtro elimina más agudos y el sonido queda más grave. Si disminuimos la resistencia, pasan más frecuencias y el sonido conserva más medios y agudos. |
+| *Potenciómetro de volumen* | El segundo potenciómetro se llama *Level*. Su función es mucho más simple: solamente controla el volumen de salida. No modifica el filtrado del sonido. Lo único que hace es aumentar o disminuir el nivel de la señal que ya fue procesada. |
 
 #### ¿Cómo funciona todo junto?
-Cuando entra la señal de audio, las resistencias y los capacitores comienzan a separar las frecuencias. El integrado procesa esa señal utilizando la red de realimentación formada por esos mismos componentes. Después, el usuario puede ajustar la frecuencia de corte con el potenciómetro **Frequency** y regular el volumen final con el potenciómetro **Level**. Finalmente, la señal sale filtrada por la salida de audio.
+Cuando entra la señal de audio, las resistencias y los capacitores comienzan a separar las frecuencias. El integrado procesa esa señal utilizando la red de realimentación formada por esos mismos componentes. Después, el usuario puede ajustar la frecuencia de corte con el potenciómetro *Frequency* y regular el volumen final con el potenciómetro *Level*. Finalmente, la señal sale filtrada por la salida de audio.
 
 #### ¿Por qué se llama filtro pasabajos?
-Se llama pasabajos porque permite el paso de las frecuencias bajas y reduce las frecuencias altas. La frecuencia donde comienza esa reducción se conoce como **frecuencia de corte**, y depende de los valores de las resistencias y los capacitores del circuito.
+Se llama pasabajos porque permite el paso de las frecuencias bajas y reduce las frecuencias altas. La frecuencia donde comienza esa reducción se conoce como *frecuencia de corte*, y depende de los valores de las resistencias y los capacitores del circuito.
 
 #### Conclusión
 En resumen, este circuito recibe una señal de audio, elimina parte de las frecuencias altas mediante una red formada por resistencias y capacitores, el integrado JRC4558 procesa esa señal para obtener un filtrado más estable y el usuario puede ajustar tanto la frecuencia de corte como el volumen de salida mediante los dos potenciómetros. El resultado es una señal donde predominan los sonidos graves.
 
-## carcasa
+## carcasas
+
+<img width="3300" height="1856" alt="componentesunidos" src="https://github.com/user-attachments/assets/00f5585d-3afc-4de0-9832-2dadeff76ad4" />
+
+<img width="3056" height="3056" alt="propuestacarcasa03" src="https://github.com/user-attachments/assets/875ce868-0f07-43ef-a982-797b489b222d" />
+
+<img width="3056" height="3056" alt="carcasproto" src="https://github.com/user-attachments/assets/91f1ab5e-b782-4f27-afd0-9d1f065c5e1d" />
+
 
 ## 5. Arquitectura Estructural de las Carcasas
 
-La carcasa de nuestro instrumento trasciende la idea de ser un simple contenedor protector. Se concibe como un manifiesto formal y material cuya meta es resguardar, estructurar, revelar y comunicar de manera clara la trama electrónica que ocurre en su interior. En perfecta sincronía con nuestra metáfora de la Tierra y el Cielo (el meteorito y el telescopio), decidimos que el sistema final no habitara en una sola caja ciega, sino en **dos carcasas físicas diferenciadas** que dialogan entre sí a través del contraste de sus materiales y procesos de fabricación.
+La carcasa de nuestro instrumento trasciende la idea de ser un simple contenedor protector. Se concibe como un manifiesto formal y material cuya meta es resguardar, estructurar, revelar y comunicar de manera clara la trama electrónica que ocurre en su interior. En perfecta sincronía con nuestra metáfora de la Tierra y el Cielo (el meteorito y el telescopio), decidimos que el sistema final no habitara en una sola caja ciega, sino en *dos carcasas físicas diferenciadas* que dialogan entre sí a través del contraste de sus materiales y procesos de fabricación.
 
-### Carcasa 1: Geoda 
 
-Esta unidad funciona como el "núcleo rítmico" y sonoro del sistema. Contiene dos placas que operan de forma conjunta:
-* El módulo **Secuenciador** 
-* El módulo **Oscilador/Percutor (Lub-Dub)**.
+<img width="3000" height="4000" alt="carcasa02" src="https://github.com/user-attachments/assets/f77e9826-d338-4d34-a972-3229a855df4f" />
 
-**Un meteorito llegó desde el espacio.** ¿Por qué tiene cables? ¿Las luces significan algo? ¿Qué nos están tratando de decir? ¿Es solo ruido o hay algo más?...
 
-Los científicos intentan capturar este sonido y necesitan descifrarlo. **¿Seremos capaces? ¿Será que aún no estamos listos?**...
+### 6.1. La Geoda Lunar: Secuenciador y Oscilador (Construcción Manual)
 
-Primero necesitamos entender su forma. En la Tierra existen unas rocas llamadas **geodas**. Estas son formaciones geológicas cuyo interior está parcial o totalmente cristalizado.
+Esta unidad funciona como el "núcleo rítmico" y sonoro del sistema. Contiene dos placas interconectadas que operan de forma conjunta:
+* El módulo *Secuenciador* 
+* El módulo *Lub-Dub (Oscilador/Percutor, Grupo 06)*.
 
-Los cristales de este meteorito son muy parecidos a los de una geoda. **¿Será que la luz en su interior y sus cristales están tratando de salir por los orificios para no pasar desapercibidos?**
-
-**Su interior:**
-
-En su interior hay unas placas que están emitiendo señales. En uno de sus lados se encuentran estas luces y, en el otro, está el **¿corazón?** Tiene la forma de un corazón humano, aunque no sabemos de dónde proviene este meteorito.
-
-Lo que sí sabemos es que, **al conectarlo, comienza a emitir señales**. Se escuchan ruidos intensos, como un corazón acelerado, o sonidos más débiles, como un corazón que se está apagando. Su pulso puede ser fuerte o suave y la señal puede volverse lenta o muy rápida, **como una taquicardia**.
-
-### Construcción
-
-Para representar la caída del meteorito, el caos y su conexión con la Tierra, esta carcasa fue **construida completamente a mano**, alejándonos por completo de la fabricación digital. Su base se conforma por una estructura alámbrica recubierta con papel aluminio para generar el soporte estructural. Sobre esto, se modeló el volumen con cerámica en frío para lograr la textura rocosa, finalizando con un trabajo de pintura. 
-
-FOTOS PROCESO
+Para representar la caída del meteorito, el caos y su conexión con la Tierra, esta carcasa fue *construida completamente a mano*, alejándonos por completo de la fabricación digital. Su base se conforma por una estructura alámbrica recubierta con papel aluminio para generar el soporte estructural. Sobre esto, se modeló el volumen con cerámica en frío para lograr la textura rocosa, finalizando con un trabajo de pintura. 
 
 El detalle más íntimo de esta pieza se encuentra en su interior: cristales adheridos a mano que simulan el corazón cristalizado de una geoda real. Las luces LED de los circuitos actúan como indicadores visuales del "latido" del sistema, brillando y refractándose a través de estos cristales internos para asomarse hacia el exterior, invitando al observador a mirar dentro de la roca.
 
-### Carcasa 2: Filtro
+### 6.2. La Carcasa del Filtro: Precisión y Transparencia (Corte Láser)
 
-Esta segunda carcasa está dedicada exclusivamente al módulo del **Filtro Paso Bajo (VCF) del Grupo 05**. A diferencia de la rusticidad orgánica de la Geoda, esta unidad representa la precisión, el "cielo" y la observación estructurada.
+Esta segunda carcasa está dedicada exclusivamente al módulo del *Filtro Paso Bajo (VCF) del Grupo 05*. A diferencia de la rusticidad orgánica de la Geoda, esta unidad representa la precisión, el "cielo" y la observación estructurada.
 
 Su arquitectura se compone de placas de acrílico transparente cortadas mediante tecnología láser. El vector de corte sigue fielmente el contorno perimetral de la PCB, respetando la icónica silueta inspirada en las líneas de un tocadiscos o un lente de observación, presente desde nuestras primeras etapas de diseño. La placa inferior actúa como base del chasis y la superior como panel de control e interfaz. Ambas caras se mantienen firmemente unidas y distanciadas mediante pernos M3 y espaciadores metálicos con una altura de entre 15 y 20 mm.
 
-Esta solución de diseño da vida a un volumen liviano y suspendido. Al dejar los laterales abiertos y aprovechar la transparencia absoluta del acrílico, la **placa de cobre desnudo** se convierte en la protagonista indiscutida. El usuario puede escudriñar las soldaduras manuales y los componentes desde cualquier ángulo, transformando la ingeniería cruda en un paisaje visualmente contemplable.
+Esta solución de diseño da vida a un volumen liviano y suspendido. Al dejar los laterales abiertos y aprovechar la transparencia absoluta del acrílico, la *placa de cobre desnudo* se convierte en la protagonista indiscutida. El usuario puede escudriñar las soldaduras manuales y los componentes desde cualquier ángulo, transformando la ingeniería cruda en un paisaje visualmente contemplable.
+
+
+<img width="3840" height="2160" alt="pcbvista" src="https://github.com/user-attachments/assets/b4be89ae-5857-48d7-8570-f0748c960c07" />
+
 
 ### Influencias y referentes artísticos
 
 El diseño conceptual de estos contenedores se apoya fuertemente en dos corrientes vanguardistas:
 
-1. **Bleep Labs:** Firma icónica en la manufactura de sintetizadores experimentales. Su filosofía operativa plantea que la electrónica debe hablar el mismo idioma que la interfaz visual. El circuito no debe ser un secreto técnico confinado a una caja ciega; debe ser un elemento vivo que explica de forma transparente el origen del flujo eléctrico y sonoro, estrechando el vínculo entre el músico, la máquina y la onda sonora resultante.
-2. **Yoko Ono (Composición Activa):** La disposición de los controles y la apertura de las carcasas dialogan con las teorías de participación artística planteadas por Yoko Ono. En sus postulados teóricos, el valor del arte no descansa en la rigidez del objeto estático, sino en las dinámicas humanas y las experiencias que se desencadenan cuando el espectador interactúa con él. Bajo este enfoque, nuestro sintetizador modular renuncia a la caja cerrada tradicional para invitar activamente al usuario a un viaje de descubrimiento perceptivo.
+1. *Bleep Labs:* Firma icónica en la manufactura de sintetizadores experimentales. Su filosofía operativa plantea que la electrónica debe hablar el mismo idioma que la interfaz visual. El circuito no debe ser un secreto técnico confinado a una caja ciega; debe ser un elemento vivo que explica de forma transparente el origen del flujo eléctrico y sonoro, estrechando el vínculo entre el músico, la máquina y la onda sonora resultante.
+2. *Yoko Ono (Composición Activa):* La disposición de los controles y la apertura de las carcasas dialogan con las teorías de participación artística planteadas por Yoko Ono. En sus postulados teóricos, el valor del arte no descansa en la rigidez del objeto estático, sino en las dinámicas humanas y las experiencias que se desencadenan cuando el espectador interactúa con él. Bajo este enfoque, nuestro sintetizador modular renuncia a la caja cerrada tradicional para invitar activamente al usuario a un viaje de descubrimiento perceptivo.
 
 ## composición
 
